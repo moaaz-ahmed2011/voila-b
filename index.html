@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Voila </title>
+<link rel="stylesheet" href="voila style.css">
+</head>
+<body>
+    <body id="top">
+   <center>
+    <div class="VLoccc">
+        <div class="Pvc6xe">
+            <div class="TlfmSc">
+                <a href="#top">
+                <img src="voila.jpg" class="lzy1Td">
+            </a>
+                <span class="QTKDff">Viola</span>
+            </div>
+        </div>
+        <div class="zDUgLc">
+        </div>
+    </div>
+        </center>
+<center>
+    <section id="products" class="products">
+        <div class="product-card">
+            <img src="IMG-20240808-WA0023.jpg" class="spaced-image">
+            <p>Price:300EGP </p>
+            <a href="https://sites.google.com/view/bag1-2/home" class="button link" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+        <div class="product-card">
+            <img src="350.jpg" class="spaced-image">
+            <p>Price:350EGP </p>
+            <a href="https://sites.google.com/view/bag3-2/home" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+    </section>
+</center>
+<center>
+    <section id="products" class="products">
+        <div class="product-card">
+            <img src="IMG-20240808-WA0053.jpg" class="spaced-image">
+            <p>Price:300EGP </p>
+            <a href="https://sites.google.com/view/bag1-2/home" class="button link" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+        <div class="product-card">
+            <img src="IMG-20240808-WA0031.jpg" class="spaced-image">
+            <p>Price:350EGP </p>
+            <a href="https://sites.google.com/view/bag330/home" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+    </section>
+</center>
+<center>
+    <section id="products" class="products">
+        <div class="product-card">
+            <img src="IMG-20240808-WA0035.jpg" class="spaced-image">
+            <p>Price:350EGP </p>
+            <a href="https://sites.google.com/view/bag3300/home" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+        <div class="product-card">
+            <img src="IMG-20240808-WA0039.jpg" class="spaced-image">
+            <p>Price:300EGP </p>
+            <a href="https://sites.google.com/view/bag30/home" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+    </section>
+</center>
+<center>
+    <section id="products" class="products">
+        <div class="product-card">
+            <img src="IMG-20240808-WA0040.jpg" class="spaced-image">
+            <p>Price:350EGP </p>
+            <a href="https://sites.google.com/view/bag35/home" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+        <div class="product-card">
+            <img src="IMG-20240808-WA0042.jpg" class="spaced-image">
+            <p>Price:350EGP </p>
+            <a href="https://sites.google.com/view/bag350/home" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+    </section>
+</center>
+<center>
+    <section id="products" class="products">
+        <div class="product-card">
+            <div class="carousel carousel1">
+                <div class="carousel-images">
+                    <img src="IMG-20240808-WA0053.jpg" class="active spaced-image">
+                    <img src="IMG-20240808-WA0049.jpg" class="spaced-image">
+                    <img src="IMG-20240808-WA0051.jpg" class="spaced-image">
+                </div>
+                <button class="prevBtn prev1">&#10094;</button>
+                <button class="nextBtn next1">&#10095;</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="carousel carousel2">
+                <div class="carousel-images">
+                    <img src="IMG-20240808-WA0033.jpg" class="active spaced-image">
+                    <img src="IMG-20240808-WA0034.jpg" class="spaced-image">
+                </div>
+                <button class="prevBtn prev2">&#10094;</button>
+                <button class="nextBtn next2">&#10095;</button>
+            </div>
+        </div>
+    </section>
+</center>
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <div class="social-links">
+        <a href="https://www.facebook.com/profile.php?id=61560565383629&mibextid=ZbWKwL" target="_blank">
+            <img src="Facebok.png">
+        </a>
+        <a href="https://www.instagram.com/viola.clutch?igsh=NzdrY21lbmp5OWpr" target="_blank">
+            <img src="Instgram.png">
+        </a>
+        <a href="https://wa.me/+201112348689" target="_blank">
+            <img src="whatsapp.png" >
+        </a>
+    </div>
+</section>
+<script>
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        function setupCarousel(carouselClass) {
+            let images = document.querySelectorAll("." + carouselClass + " .carousel-images img");
+            let currentIndex = 0;
+            function updateCarousel() {
+                images.forEach((img, index) => {
+                    img.classList.toggle("active", index === currentIndex);
+                });
+            }
+            document.querySelector("." + carouselClass + " .prevBtn").addEventListener("click", function () {
+                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                updateCarousel();
+            });
+            document.querySelector("." + carouselClass + " .nextBtn").addEventListener("click", function () {
+                currentIndex = (currentIndex + 1) % images.length;
+                updateCarousel();
+            });
+            updateCarousel();
+        }
+        setupCarousel("carousel1");
+        setupCarousel("carousel2");
+    });
+</script>
+</body>
+</html>
